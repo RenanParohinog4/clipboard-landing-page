@@ -1,0 +1,358 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    font-size: 18px;
+}
+/*A tag style*/
+a{
+    text-decoration: none;
+    color:black;
+}
+/*Logo*/
+.logo{
+    max-width: 15%;
+}
+
+.main-section,
+.hero-section-text,
+.clipboard-info,
+.tools-section-title,
+.clipboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*main section or first page*/
+.main-section{
+    height: 100vh;
+
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+
+    padding: 3rem 20rem 3rem;
+}
+.main-section img{
+    margin-bottom: 3.5rem;
+}
+.main-section h1{
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+.main-section p{
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 70%;
+}
+.cta button{
+    width: 200px;
+    padding:15px; 
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+}
+.btn-one{
+    background-color: hsl(171, 66%, 44%);
+    margin-right: 10px;
+}
+.btn-two{
+    background-color: hsl(233, 100%, 69%);
+}
+
+/*Hero-section-style*/
+.hero-section{
+    height: 100vh;
+
+}
+.hero-section-text{
+    padding: 20px 20px 40px;
+}
+.hero-section-text h2{
+    margin-bottom: 1rem;
+}
+.hero-section-text p{
+    max-width: 50%;
+    text-align: center;
+}
+/*Grid inside the hero section*/
+.hero-section-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hero-img hero-text";
+}
+.hero-section-img{
+    grid-area: hero-img;
+}
+.hero-section-img img{
+    max-width: 95%;
+}
+.hero-section-additional-text{
+    grid-area: hero-text;
+}
+.hero-section-additional-text {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.hero-section-additional-text p{
+    width: 60%;
+    margin-bottom: 40px;
+}
+.hero-section-additional-text h3{
+    margin-bottom: 10px;
+}
+
+/*Clipboard-info */
+/*main styling can be found at the top*/
+.clipboard-info{
+    height: 100vh;
+}
+.clipboard-info > *{
+    margin-bottom: 2rem;
+}
+.clipboard-info p{
+    width: 50%;
+    text-align: center;
+}
+.clipboard-info img{
+    max-width: 50%;
+}
+
+/*Tools section*/
+.tools-section{
+    height: 100vh;
+}
+.tools-section-title h2{
+    margin-bottom: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 50px;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    column-gap: 50px;
+}
+
+
+.partner{
+    padding: 100px 30px 20px;
+}
+.partner > img{
+    margin-left: 80px;
+}
+
+/*Clipboard-style// 
+========main style can be found at the top im sorry for that im just practicing clean code*/
+.clipboard{
+    height: 30vh;
+    margin-top:0;
+    padding-top: 0%;
+}
+.clipboard > *{
+    margin-bottom: 20px;
+}
+.clipboard p{
+    max-width: 50%;
+    text-align: center;
+}
+
+/*footer*/
+.footer{
+    height: 20vh;
+    background-color: hsl(201, 11%, 66%);
+}
+
+.footer{
+   display: flex;
+}
+.footer-logo img{
+    max-width: 60%;
+    padding: 0%;
+}
+.footer  > div{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    
+}
+.footer > div a{
+    margin-bottom: 10px;
+    color: white;
+}
+
+@media all and (max-width:375px){
+        .main-section,
+        .hero-section-text,
+        .clipboard-info,
+        .grid,
+        .tools-section-title,
+        .clipboard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    .main-section{
+        height: 100vh;
+
+        background-image: url(./images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        padding:20px;
+
+    }
+    .logo{
+        max-width: 30%;
+    }
+    .main-section img{
+        margin-bottom: 2rem;
+    }
+    .main-section h1{
+        font-size: 40px;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .main-section p{
+        margin-bottom: 1rem;
+        text-align: center;
+        width:90%;
+    }
+
+    /*cta*/
+    .cta button{
+        width: 100%;
+        padding:15px; 
+        color: #fff;
+        border: none;
+        border-radius: 100px;
+    }
+    .btn-one{
+        background-color: hsl(171, 66%, 44%);
+        margin-bottom: 10px;
+    }
+    .btn-two{
+        background-color: hsl(233, 100%, 69%);
+    }
+    /*hero-section*/
+    .hero-section-text{
+        padding:20px 30px;
+        text-align: center;
+    
+    }
+    .hero-section-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-section-img img{
+        max-width: 80%;
+        
+    }
+    .hero-section-text h2{
+        margin-bottom: 1rem;
+    }
+    .hero-section-text p{
+        max-width: 90%;
+        text-align: center;
+    }
+    .hero-section-grid{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+    }
+    .hero-section-additional-text > div{
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+    }
+    .hero-section-additional-text {
+        padding-left: 0%;
+       
+    }
+    .hero-section-additional-text p{
+        width: 80%;
+        text-align: center;
+       
+       
+    }
+
+    /*Clipboard*/
+    .clipboard-info{
+        margin: 200px 0 50px;
+        height: 100vh;
+    }
+    .clipboard-info > *{
+        margin-bottom: rem;
+    }
+    .clipboard-info p{
+        width: 80%;
+        text-align: center;
+    }
+    .clipboard-info img{
+        max-width: 90%;
+    }
+    .grid > div{
+      padding-bottom: 40px;
+    }
+    
+    
+    .partner{
+        height: min-content(60vh,auto);
+        padding: 0%;
+
+    }
+    .partner > img{
+       padding-bottom: 50px;
+    }
+
+    /*clipboard*/
+    .clipboard{
+        height: 60vh;
+        margin-top: 350px;
+    }
+    .clipboard p{
+        max-width: 90%;
+        text-align: center;
+    }
+
+    /*footer*/
+        .footer{
+            height: auto;
+            background-color: hsl(201, 11%, 66%);
+        }
+        
+        .footer{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+        }
+        .footer  > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+         
+            
+        }
+        .footer > div a{
+            margin-bottom: 20px;
+            color: white;
+        }
+  
+    }
